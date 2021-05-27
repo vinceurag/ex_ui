@@ -1,0 +1,28 @@
+vstack do
+  image("https://avatars.githubusercontent.com/u/19531438?v=4")
+  |> width("100px")
+  |> border_radius("50%")
+
+  h1("Hello, my name is Vincy.")
+  |> foreground_color(:green)
+
+  text("This is a sample of ExUI, a SwiftUI copycat.")
+  |> font_style(:italic)
+
+  text("This is a bold sentence!!!")
+  |> foreground_color(:blue)
+  |> font_weight(:bold)
+
+  hstack do
+    text("Link 1")
+    |> padding_right("50px")
+
+    text("Link 2")
+  end
+
+  marquee("I am a moving text")
+  |> width("500px")
+
+  link("View my Github", href: "https://github.com/vinceurag")
+  |> foreground_color("#27ae60")
+end

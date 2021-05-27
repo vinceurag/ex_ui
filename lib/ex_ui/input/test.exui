@@ -1,0 +1,10 @@
+vstack do
+  text("Hello, world!")
+  |> color(:white)
+  |> background_color(:black)
+  |> margin_bottom("10px")
+
+  text("Green background")
+  |> color(:white)
+  |> background_color(:green)
+end
